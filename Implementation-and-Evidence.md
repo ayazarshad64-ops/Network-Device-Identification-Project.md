@@ -64,6 +64,8 @@ To automate the process and get better results, I installed Python and used Pyth
 
 **Evidence (HostLens Output):**
 <img src="screenshots/proj-hostlens-scan.png" width="600">
+**Evidence (Zenmap Intense Scan):**
+<img src="screenshots/proj-zenmap-intense.png" width="600">
 
 **4. Running Netwatchdog (Baseline Scan):**
 *   **Command Used:** `netwatchdog` *(Run as Administrator)*
@@ -71,6 +73,8 @@ To automate the process and get better results, I installed Python and used Pyth
 
 **Evidence (Netwatchdog Output):**
 <img src="screenshots/proj-netwatchdog.png" width="600">
+**Evidence (MAC Lookup):**
+<img src="screenshots/proj-mac-lookup.png" width="600">
 
 ---
 
