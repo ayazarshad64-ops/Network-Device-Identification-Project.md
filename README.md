@@ -2,27 +2,44 @@
   <img src="proj-banner.png" alt="Network Device Identification Project" width="100%">
 </p>
 
-<h1 align="center">🌐 Network Device Identification & Enumeration</h1>
+<h1 align="center" style="color: #2c3e50; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">🌐 Network Device Identification & Enumeration</h1>
 
-<p align="center">
+<p align="center" style="font-size: 1.1em; color: #34495e;">
   <b>An Educational Project for Local Network Reconnaissance & Analysis</b>
 </p>
 
-| Field | Details |
-|:------|:--------|
-| 👨‍💻 **Author** | Muhammad Ayaz |
-| 🎓 **Program/Batch** | cyber security |25 to 29 |
-| 🧑‍🏫 **Instructor** | Muhammad Ans Khalid |
-| 🛠️ **Tools Used** | Nmap, Zenmap, Python (HostLens, Netwatchdog), Wireshark |
-| 🎯 **Objective** | To identify unknown devices on a local network using active and passive reconnaissance techniques. |
+<br>
+
+<!-- Author Details Card -->
+<div style="background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); border-radius: 12px; padding: 20px; color: white; box-shadow: 0 4px 8px rgba(0,0,0,0.2); margin-bottom: 25px;">
+  <h3 style="margin-top: 0; color: #ecf0f1; border-bottom: 2px solid rgba(255,255,255,0.2); padding-bottom: 10px;">👨‍💻 Project Details</h3>
+  <p style="margin: 8px 0;"><b>Author:</b> Muhammad Ayaz</p>
+  <p style="margin: 8px 0;"><b>Program:</b> Cyber Security B084H</p>
+  <p style="margin: 8px 0;"><b>Instructor:</b> Mr. Waqas Karim</p>
+</div>
+
+<!-- Objective Card -->
+<div style="background-color: #f8f9fa; border-left: 6px solid #e74c3c; border-radius: 8px; padding: 15px; margin-bottom: 25px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+  <h3 style="margin-top: 0; color: #c0392b;">🎯 Objective</h3>
+  <p style="margin-bottom: 0; color: #2c3e50;">To identify unknown devices on a local network using active and passive reconnaissance techniques.</p>
+</div>
+
+<!-- Tools Card -->
+<div style="background-color: #f8f9fa; border-left: 6px solid #3498db; border-radius: 8px; padding: 15px; margin-bottom: 30px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+  <h3 style="margin-top: 0; color: #2980b9;">🛠️ Tools Used</h3>
+  <span style="background-color: #3498db; color: white; padding: 5px 10px; border-radius: 20px; font-size: 0.9em; margin-right: 5px;">Nmap</span>
+  <span style="background-color: #3498db; color: white; padding: 5px 10px; border-radius: 20px; font-size: 0.9em; margin-right: 5px;">Zenmap</span>
+  <span style="background-color: #3498db; color: white; padding: 5px 10px; border-radius: 20px; font-size: 0.9em; margin-right: 5px;">Python (HostLens)</span>
+  <span style="background-color: #3498db; color: white; padding: 5px 10px; border-radius: 20px; font-size: 0.9em;">Wireshark</span>
+</div>
 
 ---
 
-## 1. Project Introduction
-In modern networks, identifying connected devices is crucial for security. However, with the introduction of **MAC Randomization** in iOS and Android devices, identifying unknown devices has become challenging. This project documents the step-by-step process of discovering live hosts, identifying their operating systems, and attempting to unmask devices using random MAC addresses.
+<h2 style="color: #2c3e50; border-bottom: 2px solid #bdc3c7; padding-bottom: 10px;">📖 Project Introduction</h2>
+<p>In modern networks, identifying connected devices is crucial for security. However, with the introduction of <b>MAC Randomization</b> in iOS and Android devices, identifying unknown devices has become challenging. This project documents the step-by-step process of discovering live hosts, identifying their operating systems, and attempting to unmask devices using random MAC addresses.</p>
 
-## 2. Problem Statement
-During a local network scan, several devices appear as "Unknown" because modern smartphones hide their true MAC addresses for privacy. Traditional tools like Nmap can only see the random MAC and closed ports. The challenge is to bypass this limitation and identify the device types using advanced enumeration.
+<h2 style="color: #2c3e50; border-bottom: 2px solid #bdc3c7; padding-bottom: 10px;">⚠️ Problem Statement</h2>
+<p>During a local network scan, several devices appear as "Unknown" because modern smartphones hide their true MAC addresses for privacy. Traditional tools like Nmap can only see the random MAC and closed ports. The challenge is to bypass this limitation and identify the device types using advanced enumeration.</p>
 
 ## 3. Objectives & Scope
 *   **Objective 1:** Discover all active hosts on the `192.168.18.0/24` subnet.
