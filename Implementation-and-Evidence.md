@@ -1,4 +1,3 @@
-
 <h1 align="center">⚙️ Implementation & Evidence</h1>
 <p align="center"><i>Step-by-Step Execution of Network Device Identification</i></p>
 
@@ -20,8 +19,8 @@ I used Zenmap (Nmap GUI) to perform a Ping Scan on the subnet `192.168.18.0/24` 
 
 *   **Result:** Found 12 active hosts. Some had known MAC addresses (Huawei, Vivo), while others showed as "Unknown".
 
-**Evidence (Zenmap Ping Scan):**
-<img src="screenshots/proj-nmap-pingscan.png" width="600">
+**Evidence (Zenmap Hosts Output):**
+<img src="screenshots/proj-zenmap-hosts.png" width="600">
 
 ---
 
@@ -31,8 +30,8 @@ I targeted an unknown device (`192.168.18.90`) with an aggressive Nmap scan to f
 *   **Command Used:** `nmap -sS -O --script smb-os-discovery 192.168.18.90`
 *   **Result:** All 1000 scanned ports were closed. Nmap guessed it as a phone in sleep mode due to the randomized MAC address (`92:84:7F...`).
 
-**Evidence (Nmap Aggressive Scan):**
-<img src="screenshots/proj-nmap-aggressive.png" width="600">
+**Evidence (Zenmap Intense Scan):**
+<img src="screenshots/proj-zenmap-intens.png" width="600">
 
 ---
 
@@ -42,7 +41,7 @@ To confirm the router's identity, I extracted its MAC address (`60:A2:C6:F3:0C:4
 *   **Result:** Confirmed it belongs to **Huawei Technologies**.
 
 **Evidence (MAC Lookup on IPLocation.io):**
-<img src="screenshots/proj-nmap-mac-lookup.png" width="600">
+<img src="screenshots/proj-mac-lookup.png" width="600">
 
 ---
 
@@ -56,7 +55,7 @@ To automate the process and get better results, I installed Python and used Pyth
 *   **Command Used:** `pip install hostlens`
 
 **Evidence (CMD Installation):**
-<img src="screenshots/proj-pip-install.png" width="600">
+<img src="screenshots/proj-hostlens-install.png" width="600">
 
 **3. Running HostLens Scan:**
 *   **Command Used:** `hostlens scan`
@@ -64,17 +63,16 @@ To automate the process and get better results, I installed Python and used Pyth
 
 **Evidence (HostLens Output):**
 <img src="screenshots/proj-hostlens-scan.png" width="600">
-**Evidence (Zenmap Intense Scan):**
-<img src="screenshots/proj-zenmap-intense.png" width="600">
 
-**4. Running Netwatchdog (Baseline Scan):**
+**4. Running ZNetScan Installation:**
+<img src="screenshots/proj-znetscan-install.png" width="600">
+
+**5. Running Netwatchdog (Baseline Scan):**
 *   **Command Used:** `netwatchdog` *(Run as Administrator)*
 *   **Result:** Clearly segregated devices into categories: Router, Computer, and **Private MAC (phone/tablet)**.
 
 **Evidence (Netwatchdog Output):**
 <img src="screenshots/proj-netwatchdog.png" width="600">
-**Evidence (MAC Lookup):**
-<img src="screenshots/proj-mac-lookup.png" width="600">
 
 ---
 
