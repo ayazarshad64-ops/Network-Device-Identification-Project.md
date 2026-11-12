@@ -47,9 +47,8 @@ During a local network scan, several devices appear as "Unknown" because modern 
 
 ## 5. System Design & Data Flow
 
-### 5.1 Network Topology
-*(Insert the Zenmap Topology screenshot here if available)*
-
+**5.1. Network Topology Map (Zenmap):**
+<img src="screenshots/proj-topology.png" width="600">
 ### 5.2 Data Flow Diagram (DFD)
 The process follows a simple flow: identifying the local IP, scanning the subnet, analyzing the MAC addresses, and classifying the devices.
 
