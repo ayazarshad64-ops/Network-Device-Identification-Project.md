@@ -61,8 +61,8 @@ graph TD
     C -->|No| A
     D --> E[Perform OUI Lookup on MAC]
     E --> F{Is MAC Private?}
-    F -->|Yes| G[Device is Phone/Tablet (Random MAC)]
-    F -->|No| H[Identify Vendor: Huawei, Intel, etc.]
+    F -->|Yes| G[Device is Phone or Tablet]
+    F -->|No| H[Identify Vendor Huawei Intel etc]
     G --> I[Run Deep Scan for OS Fingerprinting]
     H --> I
     I --> J[Generate Final Report]
